@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 1rem 2rem;
+}
+
+.header-inner {
+  width: 86%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-nav-ul > li > a {
+  list-style: none;
+  margin: 0 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.mobile-header {
+  position: relative;
+}
+
+.mobile-menu {
+  position: absolute;
+  width: 150px;
+  z-index: 30;
+  padding: 12px;
+  border-radius: 1rem;
+  box-shadow: 1px 18px 40px rgba(0, 0, 0, 0.2);
+  background: whitesmoke;
+  animation: slideInFromTop 0.3s ease;
+}
+
+.mobile-nav-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.mobile-nav-ul > li > a {
+  font-weight: 500;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-10px) scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-nav-ul > .nav-li {
+    display: none;
+  }
+
+  .header > .header-inner > .logo {
+    display: none;
+  }
+
+  .header-inner {
+    width: 96%;
+  }
+}

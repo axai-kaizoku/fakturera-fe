@@ -1,0 +1,42 @@
+.toggle-container {
+  position: relative;
+}
+
+.toggle-language-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  padding: 0.5rem;
+  color: white;
+  font-weight: 500;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+
+.toggle-language-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.toggle-language-options-container {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.2);
+  border-radius: 0.4rem;
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.toggle-flag {
+  margin-top: 3px;
+  border-radius: 1px;
+}
