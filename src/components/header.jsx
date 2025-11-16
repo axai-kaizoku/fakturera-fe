@@ -14,6 +14,7 @@ export const Header = () => {
 
         <div className="mobile-header">
           <button
+            onBlur={() => setTimeout(() => setOpen(false), 100)}
             className="menu-button"
             onClick={() => {
               setOpen((prev) => !prev);

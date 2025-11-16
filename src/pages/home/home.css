@@ -165,12 +165,17 @@
   border-radius: 12px;
   /* box-shadow: 0 2px 8px var(--shadow); */
   overflow-x: auto;
+  display: flex;
 }
 
 .products-table {
   width: 100%;
   border-collapse: collapse;
   min-width: 1200px;
+}
+
+.side-nav-home {
+  /* display: hidden; */
 }
 
 .products-table thead {
@@ -295,6 +300,10 @@
   .pricelist-header {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .side-nav-home {
+    display: none;
   }
 
   .menu-button {

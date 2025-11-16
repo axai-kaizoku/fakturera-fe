@@ -108,6 +108,9 @@ const Home = () => {
         </div>
 
         <div className="table-wrapper">
+          {/* TODO */}
+          <div className="side-nav-home">SIDE Nav</div>
+
           <table className="products-table">
             <thead>
               <tr>
