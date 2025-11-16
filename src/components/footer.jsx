@@ -1,6 +1,8 @@
+import { useLanguage } from "../hooks/use-language";
 import "./footer.css";
 
 export const Footer = () => {
+  const { t } = useLanguage();
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -8,9 +10,9 @@ export const Footer = () => {
           <div className="footer-title">Fakturera</div>
           <nav>
             <ul className="footer-links">
-              <li>Home</li>
-              <li>Order</li>
-              <li>Contact us</li>
+              <li>{t("nav.home")}</li>
+              <li>{t("nav.order")}</li>
+              <li>{t("nav.contactUs")}</li>
             </ul>
           </nav>
         </div>
